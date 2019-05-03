@@ -1,4 +1,7 @@
-body { margin: 0; font-family: sans-serif; }
+body { margin: 0; font-family: sans-serif;
+  background-image: url('https://i.redd.it/7ns2i4zs6c911.png');
+  background-size: cover;
+}
 
 .hidden {
   /* display: none; */
@@ -24,7 +27,7 @@ h1 > small {
 .banner-bg {
   background-color: #e5e5e5;
   width: 100%;
-  padding: 3% 0;
+  padding: 1% 0;
 }
 
 .banner-stripe {
