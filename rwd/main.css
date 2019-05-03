@@ -25,25 +25,15 @@ img {
   display: none;
 }
 
-.offScreen {
-  position: relative;
-  right: -50%;
-}
-
 #zMenu {
   position: fixed;
   top: 0;
+  right: -8%;
   width: 60%;
   height: 100vh;
-  transition: position 3s;
+  animation: slideIn 1s;
   background: #333;
   color: #fff;
-}
-
-.onScreen {
-  position: fixed;
-  top: 0;
-  left: 50%;
 }
 
 
@@ -69,11 +59,12 @@ img {
 @keyframes slideIn {
   from {
     position: relative;
-    right: -50%;
+    right: -80%;
   }
 
   to {
-    position: relative;
-    right: 0;
+    position: fixed;
+    top: 0;
+    right: -8%;
   }
 }
