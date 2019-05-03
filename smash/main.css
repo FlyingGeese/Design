@@ -1,23 +1,7 @@
-body { margin: 0; font-family: sans-serif;
-  background-image: url('https://i.redd.it/7ns2i4zs6c911.png');
-  background-size: cover;
-}
+body { margin: 0; font-family: sans-serif; }
 
 .hidden {
   /* display: none; */
-}
-
-.ready-banner-container h1 {
-  background: -webkit-linear-gradient(right, red, orange);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 12vh;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 800;
-  transform: skew(-20deg, -2deg);
-  word-spacing: -20px;
-  margin: 0;
 }
 
 /* h1 > small:nth-child(1) {
@@ -47,6 +31,51 @@ h1 > small:nth-child(2) {
 
 .banner-text {
   margin: 0 auto;
-  background: #333;
-  width: 70%;
+}
+
+.back-stripe {
+  position: fixed;
+  background: #e5e5e5;
+  padding: 1% 0;
+  height: 10vh;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  transform: perspective(200px) rotateY(-15deg);
+}
+
+.black-bg {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  height: 12vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  width: 40%;
+}
+
+.ready-banner-container h1 {
+  position: absolute;
+  top: -45%;
+  left: 10%;
+  z-index: 2;
+  width: 100%;
+  background: -webkit-linear-gradient(right, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  transform: skew(-20deg, -2deg);
+  word-spacing: -10px;
+  /* margin: 0; */
+}
+
+.red-stripe {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 18vh;
+  background: red;
 }
