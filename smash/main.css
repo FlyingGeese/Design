@@ -15,19 +15,30 @@ body { margin: 0; font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-weight: 800;
-  transform: skew(-30deg, -2deg);
-  word-spacing: -28px;
-  font-stretch: expanded;
+  transform: skew(-20deg, -2deg);
+  word-spacing: -20px;
+  margin: 0;
 }
 
-h1 > small {
+/* h1 > small:nth-child(1) {
+  font-size: 13vh;
+} */
+
+h1 > small:nth-child(2) {
   font-size: 8vh;
 }
 
+/* h1 > span {
+  font-size: 17vh;
+} */
+
 .banner-bg {
+  position: fixed;
+  left: -30%;
   background-color: #e5e5e5;
+  transform: perspective(200px) rotateY(-15deg);
   width: 100%;
-  padding: 1% 0;
+  padding: 0.7% 0;
 }
 
 .banner-stripe {
@@ -35,6 +46,7 @@ h1 > small {
 }
 
 .banner-text {
+  margin: 0 auto;
   background: #333;
   width: 70%;
 }
