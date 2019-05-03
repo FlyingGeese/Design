@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  overflow: none;
 }
 
 h1 {
@@ -20,6 +21,31 @@ img {
   padding: 1% 15%;
 }
 
+.hidden {
+  display: none;
+}
+
+.offScreen {
+  position: relative;
+  right: -50%;
+}
+
+#zMenu {
+  position: fixed;
+  top: 0;
+  width: 60%;
+  height: 100vh;
+  transition: position 3s;
+  background: #333;
+  color: #fff;
+}
+
+.onScreen {
+  position: fixed;
+  top: 0;
+  left: 50%;
+}
+
 
 @media only screen and (max-width: 375px) {
   h1 {
@@ -37,5 +63,17 @@ img {
 
   .container {
     padding: 1% 8%;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    position: relative;
+    right: -50%;
+  }
+
+  to {
+    position: relative;
+    right: 0;
   }
 }
