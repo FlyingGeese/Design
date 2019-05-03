@@ -1,3 +1,37 @@
+body { margin: 0; font-family: sans-serif; }
+
 .hidden {
-  display: none;
+  /* display: none; */
+}
+
+.ready-banner-container h1 {
+  background: -webkit-linear-gradient(right, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 12vh;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  transform: skew(-30deg, -2deg);
+  word-spacing: -28px;
+  font-stretch: expanded;
+}
+
+h1 > small {
+  font-size: 8vh;
+}
+
+.banner-bg {
+  background-color: #e5e5e5;
+  width: 100%;
+  padding: 3% 0;
+}
+
+.banner-stripe {
+  background: red;
+}
+
+.banner-text {
+  background: #333;
+  width: 70%;
 }
