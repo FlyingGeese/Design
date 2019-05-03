@@ -1,12 +1,13 @@
-let readyBtn = document.querySelector('#readyBtn')
+let character = document.querySelector('#character')
 let readyBanner = document.querySelector('#ready-banner')
 
-console.log(readyBtn)
+console.log(character)
 
 readyUp = () => {
   readyBanner.classList.remove('hidden')
+  document.body.classList.add('overlay-dark')
   console.log('Ready to Fight')
 }
 
 
-readyBtn.addEventListener('click', readyUp)
+character.addEventListener('click', readyUp)

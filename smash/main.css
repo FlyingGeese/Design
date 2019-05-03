@@ -1,7 +1,31 @@
 body { margin: 0; font-family: 'Anton', sans-serif; }
 
+.copy {
+  text-align: center;
+  letter-spacing: 1.8px;
+}
+
+#character {
+  width: 20%;
+  height: auto;
+  border: 1px solid black;
+  position: fixed;
+  top: 26%;
+  left: 40%;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.char-select-bg {
+  background-color:
+}
+
 .hidden {
-  /* display: none; */
+  display: none;
+}
+
+.overlay-dark {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* h1 > small:nth-child(1) {
@@ -17,7 +41,7 @@ h1 > small:nth-child(1) {
 } */
 
 .ready-banner-container {
-  transform: skew(-15deg, -4deg);
+  transform: skew(-15deg, -10deg);
 }
 
 .banner-bg {
@@ -52,7 +76,7 @@ h1 > small:nth-child(1) {
 .black-bg {
   position: absolute;
   top: 23%;
-  left: 45%;
+  left: 46.5%;
   height: 14vh;
   background: rgba(0, 0, 0, 0.8);
   z-index: 1;
@@ -72,7 +96,7 @@ h1 > small:nth-child(1) {
   text-transform: uppercase;
   text-align: center;
   font-weight: 800;
-  transform: skew(-10deg, -7deg);
+  transform: skew(-10deg, -1deg);
   word-spacing: -10px;
   letter-spacing: 4.5px;
   margin: 0;
